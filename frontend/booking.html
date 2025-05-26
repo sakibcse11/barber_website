@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Réservation en ligne - Hesso Coiffure</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Réservation en ligne, salon de coiffure Fribourg" name="keywords">
+        <meta content="Prenez rendez-vous en ligne avec Hesso Coiffure à Fribourg" name="description">
+        <!-- Content Security Policy -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://assets.calendly.com https://code.jquery.com https://stackpath.bootstrapcdn.com; connect-src 'self' http://localhost:3000 https://calendly.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://stackpath.bootstrapcdn.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data:;">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+        <!-- Calendly Widget -->
+        <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Top Bar Start -->
+        <div class="top-bar d-none d-md-block">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="top-bar-left">
+                            <div class="text">
+                                <h2>8:30 - 19:00</h2>
+                                <p>Lun-Jeu | Ven jusqu'à 20h</p>
+                            </div>
+                            <div class="text">
+                                <h2>Sam: 8:30 - 16:00</h2>
+                                <p>Dimanche fermé</p>
+                            </div>
+                            <div class="text">
+                                <h2>+41 26 322 45 67</h2>
+                                <p>Appelez pour rendez-vous</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="top-bar-right">
+                            <div class="social">
+                                <a href=""><i class="fab fa-twitter"></i></a>
+                                <a href=""><i class="fab fa-facebook-f"></i></a>
+                                <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                <a href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Top Bar End -->
+
+        <!-- Nav Bar Start -->
+        <div class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand">Hesso <span>Coiffure</span></a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto">
+                        <a href="index.html" class="nav-item nav-link">Accueil</a>
+                        <a href="about.html" class="nav-item nav-link">À propos</a>
+                        <a href="price.html" class="nav-item nav-link">Tarifs</a>
+                        <a href="booking.html" class="nav-item nav-link active">Prendre Rendez-vous en ligne</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Nav Bar End -->
+
+
+        <!-- Page Header Start -->
+        <div class="page-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Réservation en ligne</h2>
+                    </div>
+                    <div class="col-12">
+                        <a href="index.html">Accueil</a>
+                        <a href="booking.html">Réservation en ligne</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Page Header End -->
+
+        <!-- Booking Info Start -->
+        <div class="about">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 col-md-6">
+                        <div class="about-img">
+                            <img src="img/about.jpg" alt="Image">
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-6">
+                        <div class="section-header text-left">
+                            <p>Réservez facilement</p>
+                            <h2>Notre système de réservation en ligne</h2>
+                        </div>
+                        <div class="about-text">
+                            <p>
+                                Nous sommes ravis de vous présenter notre nouveau système de réservation en ligne. Désormais, vous pouvez prendre rendez-vous 24h/24 et 7j/7 selon vos disponibilités, sans attendre les heures d'ouverture du salon.
+                            </p>
+                            <p>
+                                <strong>Les avantages de notre système de réservation :</strong>
+                            </p>
+                            <ul>
+                                <li>Réservation immédiate sans attente</li>
+                                <li>Rappel par SMS 30 minutes ou 1 heure avant votre rendez-vous</li>
+                                <li>Possibilité d'annuler ou de modifier votre rendez-vous en ligne</li>
+                                <li>Visualisation des créneaux disponibles en temps réel</li>
+                                <li>Historique de vos rendez-vous précédents</li>
+                            </ul>
+                            <p>
+                                Prenez rendez-vous dès maintenant et profitez d'une expérience client optimisée !
+                            </p>
+                            <a href="#booking-frame" class="btn">Réserver maintenant</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Booking Info End -->
+
+        <!-- Booking Frame Start -->
+        <div class="service" id="booking-frame">
+            <div class="container">
+                <div class="section-header text-center">
+                    <p>Prenez rendez-vous facilement</p>
+                    <h2>Réservation rapide</h2>
+                </div>
+                
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="service-item text-center p-5">
+                            <h3 class="mb-4">Réservation en ligne simplifiée</h3>
+                            <p class="mb-4">
+                                Remplissez simplement ce formulaire avec vos coordonnées pour prendre rendez-vous rapidement.
+                            </p>
+                            
+                            <!-- Simple Booking Form -->
+                            <form id="bookingForm" class="booking-form">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="bookingName" placeholder="Votre nom" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="bookingEmail" placeholder="Votre email" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" class="form-control" id="bookingPhone" placeholder="Votre numéro de téléphone" required>
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control" id="bookingService" required>
+                                        <option value="" disabled selected>Service souhaité</option>
+                                        <option value="coupe-femme">Coupe femme</option>
+                                        <option value="coupe-homme">Coupe homme</option>
+                                        <option value="coloration">Coloration</option>
+                                        <option value="meches">Mèches</option>
+                                        <option value="brushing">Brushing</option>
+                                        <option value="soins">Soins capillaires</option>
+                                        <option value="mariage">Coiffure de mariage</option>
+                                    </select>
+                                </div>
+                                
+                                <!-- Sélection de la date -->
+                                <div class="form-group mt-4">
+                                    <label for="bookingDate">Date souhaitée</label>
+                                    <input type="date" class="form-control" id="bookingDate" required>
+                                </div>
+                                
+                                <!-- Sélection de l'heure -->
+                                <div class="form-group">
+                                    <label for="bookingTime">Choisissez un créneau horaire</label>
+                                    <select class="form-control" id="bookingTime" required disabled>
+                                        <option value="" disabled selected>Sélectionnez d'abord une date</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group mt-4">
+                                    <button type="submit" class="btn btn-block">Réserver maintenant</button>
+                                </div>
+                            </form>
+                            
+                            <!-- Calendly embed (hidden) -->
+                            <div id="calendlyContainer" style="display: none;">
+                                <div class="calendly-inline-widget" data-url="https://calendly.com/juste-ok-00/hesso-coiffure" style="min-width:320px;height:630px;"></div>
+                            </div>
+                            
+                            <div id="bookingSuccess" style="display: none;" class="alert alert-success mt-3">
+                                <h4>Réservation en cours...</h4>
+                                <p>Vos informations ont été enregistrées. Nous vous contacterons rapidement pour confirmer votre rendez-vous.</p>
+                            </div>
+                            
+                            <p class="mt-4">
+                                <strong>Vous recevrez une confirmation par email et un rappel par SMS avant votre rendez-vous.</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Booking Frame End -->
+
+        <!-- Footer Start -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="footer-contact">
+                                    <h2>Adresse du salon</h2>
+                                    <p><i class="fa fa-map-marker-alt"></i>Rue Saint-Pierre 12, 1700 Fribourg, Suisse</p>
+                                    <p><i class="fa fa-phone-alt"></i>+41 26 322 45 67</p>
+                                    <p><i class="fa fa-envelope"></i>info@hesso-coiffure.ch</p>
+                                    <div class="footer-social">
+                                        <a href=""><i class="fab fa-twitter"></i></a>
+                                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                                        <a href=""><i class="fab fa-youtube"></i></a>
+                                        <a href=""><i class="fab fa-instagram"></i></a>
+                                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="footer-link">
+                                    <h2>Liens rapides</h2>
+                                    <a href="">Conditions d'utilisation</a>
+                                    <a href="">Politique de confidentialité</a>
+                                    <a href="">Cookies</a>
+                                    <a href="">Aide</a>
+                                    <a href="">FAQ</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="footer-newsletter">
+                            <h2>Newsletter</h2>
+                            <p>
+                                Abonnez-vous à notre newsletter pour recevoir nos dernières offres et actualités.
+                            </p>
+                            <div class="form">
+                                <input class="form-control" placeholder="Votre email">
+                                <button class="btn">S'abonner</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/isotope/isotope.pkgd.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+        
+        <!-- Calendly API -->
+        <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+        
+        <!-- Calendly and Twilio Integration -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                // Référence au formulaire de réservation
+                const bookingForm = document.getElementById('bookingForm');
+                const bookingSuccess = document.getElementById('bookingSuccess');
+                const calendlyContainer = document.getElementById('calendlyContainer');
+                
+                // Références aux champs de date et d'heure
+                const dateInput = document.getElementById('bookingDate');
+                const timeSelect = document.getElementById('bookingTime');
+                
+                // URL de l'API Calendly (remplacer avec votre clé API)
+                const CALENDLY_API_KEY = 'YOUR_CALENDLY_API_KEY';
+                const CALENDLY_USER = 'juste-ok-00';
+                const CALENDLY_EVENT_TYPE = 'hesso-coiffure';
+                
+                // Définir la date minimale à aujourd'hui
+                const today = new Date();
+                const dd = String(today.getDate()).padStart(2, '0');
+                const mm = String(today.getMonth() + 1).padStart(2, '0');
+                const yyyy = today.getFullYear();
+                dateInput.min = yyyy + '-' + mm + '-' + dd;
+                
+                // Écouteur d'événement sur le changement de date
+                dateInput.addEventListener('change', function() {
+                    // Vérifier que la date n'est pas passée
+                    const selectedDate = new Date(this.value);
+                    selectedDate.setHours(0, 0, 0, 0); // Réinitialiser l'heure
+                    const todayNoTime = new Date();
+                    todayNoTime.setHours(0, 0, 0, 0); // Réinitialiser l'heure
+                    
+                    if (selectedDate < todayNoTime) {
+                        alert('Vous ne pouvez pas réserver une date passée. Veuillez choisir une date à partir d\'aujourd\'hui.');
+                        this.value = '';
+                        timeSelect.innerHTML = '<option value="" disabled selected>Sélectionnez d\'abord une date</option>';
+                        timeSelect.disabled = true;
+                        return;
+                    }
+                    
+                    // Réinitialiser le sélecteur d'heures
+                    timeSelect.innerHTML = '<option value="" disabled selected>Chargement des créneaux...</option>';
+                    timeSelect.disabled = true;
+                    
+                    // Récupérer les créneaux disponibles de Calendly
+                    fetchAvailableTimeSlots(dateInput.value);
+                });
+                
+                // Fonction pour récupérer les créneaux horaires disponibles
+                function fetchAvailableTimeSlots(date) {
+                    // URL de l'API
+                    const apiUrl = `http://localhost:3000/api/available-slots?date=${date}`;
+                    
+                    // Afficher message de chargement
+                    timeSelect.innerHTML = '<option value="" disabled selected>Chargement des créneaux...</option>';
+                    timeSelect.disabled = true;
+                    
+                    // Tentative de récupération des créneaux disponibles via notre API
+                    fetch(apiUrl)
+                        .then(response => {
+                            if (!response.ok) {
+                                throw new Error(`Erreur HTTP: ${response.status}`);
+                            }
+                            return response.json();
+                        })
+                        .then(data => {
+                            if (data.success) {
+                                // Mettre à jour le sélecteur avec les créneaux disponibles
+                                updateTimeSelector(data.slots);
+                            } else {
+                                console.error('Erreur lors de la récupération des créneaux:', data.message);
+                                timeSelect.innerHTML = '<option value="" disabled selected>Erreur de chargement: ' + data.message + '</option>';
+                            }
+                        })
+                        .catch(error => {
+                            console.error('Erreur:', error);
+                            
+                            // Si le serveur n'est pas accessible, utiliser des créneaux simulés
+                            console.log('Serveur non accessible, utilisation de créneaux simulés');
+                            const simulatedSlots = generateMockTimeSlots(date);
+                            updateTimeSelector(simulatedSlots);
+                        });
+                }
+                
+                // Fonction pour générer des créneaux horaires fictifs (en cas de problème serveur)
+                function generateMockTimeSlots(date) {
+                    const slots = [];
+                    const selectedDate = new Date(date);
+                    
+                    // Ne pas générer de créneaux pour le dimanche
+                    if (selectedDate.getDay() === 0) {
+                        return slots; // Dimanche = pas de créneaux
+                    }
+                    
+                    // Générer des créneaux selon les heures d'ouverture
+                    const startHour = selectedDate.getDay() === 6 ? 9 : 8; // 9h le samedi, 8h en semaine
+                    const endHour = selectedDate.getDay() === 6 ? 16 : 19;  // 16h le samedi, 19h en semaine
+                    
+                    // Créer des créneaux toutes les 30 minutes
+                    for (let hour = startHour; hour < endHour; hour++) {
+                        // Formater l'heure avec un zéro devant si nécessaire
+                        const formattedHour = hour.toString().padStart(2, '0');
+                        
+                        // Ajouter créneaux à 00 et 30 minutes
+                        slots.push({
+                            time: `${formattedHour}:00`,
+                            display: `${formattedHour}:00`,
+                            value: `${formattedHour}:00`
+                        });
+                        
+                        slots.push({
+                            time: `${formattedHour}:30`,
+                            display: `${formattedHour}:30`,
+                            value: `${formattedHour}:30`
+                        });
+                    }
+                    
+                    // Filtrer les créneaux passés si la date sélectionnée est aujourd'hui
+                    const today = new Date();
+                    if (selectedDate.toDateString() === today.toDateString()) {
+                        const currentHour = today.getHours();
+                        const currentMinutes = today.getMinutes();
+                        
+                        return slots.filter(slot => {
+                            const [hours, minutes] = slot.time.split(':').map(Number);
+                            // Garder seulement les créneaux futurs avec une marge de 30 minutes
+                            return hours > currentHour || (hours === currentHour && minutes > currentMinutes + 30);
+                        });
+                    }
+                    
+                    // Simuler des créneaux déjà réservés en supprimant aléatoirement quelques options
+                    return slots.filter(() => Math.random() > 0.3);
+                }
+                
+                // Fonction pour mettre à jour le sélecteur d'heures
+                function updateTimeSelector(slots) {
+                    // Réinitialiser le sélecteur
+                    timeSelect.innerHTML = '';
+                    
+                    // Si aucun créneau disponible
+                    if (slots.length === 0) {
+                        const option = document.createElement('option');
+                        option.disabled = true;
+                        option.selected = true;
+                        option.textContent = 'Pas de créneaux disponibles pour cette date';
+                        timeSelect.appendChild(option);
+                        timeSelect.disabled = true;
+                        return;
+                    }
+                    
+                    // Filtrer les créneaux passés si la date sélectionnée est aujourd'hui
+                    const selectedDate = new Date(dateInput.value);
+                    const today = new Date();
+                    
+                    if (selectedDate.toDateString() === today.toDateString()) {
+                        const currentHour = today.getHours();
+                        const currentMinutes = today.getMinutes();
+                        
+                        slots = slots.filter(slot => {
+                            const [hours, minutes] = slot.time.split(':').map(Number);
+                            // Garder seulement les créneaux futurs avec une marge de 30 minutes
+                            return hours > currentHour || (hours === currentHour && minutes > currentMinutes + 30);
+                        });
+                        
+                        // Vérifier si des créneaux restants après filtrage
+                        if (slots.length === 0) {
+                            const option = document.createElement('option');
+                            option.disabled = true;
+                            option.selected = true;
+                            option.textContent = 'Plus de créneaux disponibles aujourd\'hui. Veuillez sélectionner une autre date.';
+                            timeSelect.appendChild(option);
+                            timeSelect.disabled = true;
+                            return;
+                        }
+                    }
+                    
+                    // Ajouter l'option par défaut
+                    const defaultOption = document.createElement('option');
+                    defaultOption.value = '';
+                    defaultOption.disabled = true;
+                    defaultOption.selected = true;
+                    defaultOption.textContent = 'Choisissez un horaire';
+                    timeSelect.appendChild(defaultOption);
+                    
+                    // Ajouter les créneaux disponibles
+                    slots.forEach(slot => {
+                        const option = document.createElement('option');
+                        option.value = slot.value;
+                        option.textContent = slot.display;
+                        timeSelect.appendChild(option);
+                    });
+                    
+                    // Activer le sélecteur
+                    timeSelect.disabled = false;
+                }
+                
+                // Gérer la soumission du formulaire
+                bookingForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Validation finale avant envoi
+                    const selectedDate = new Date(dateInput.value);
+                    const selectedTime = document.getElementById('bookingTime').value;
+                    
+                    if (!selectedTime) {
+                        alert('Veuillez sélectionner un horaire.');
+                        return;
+                    }
+                    
+                    const [hours, minutes] = selectedTime.split(':').map(Number);
+                    const reservationDate = new Date(selectedDate);
+                    reservationDate.setHours(hours, minutes, 0, 0);
+                    
+                    const now = new Date();
+                    // Ajouter marge de sécurité de 30 minutes
+                    const minReservationTime = new Date(now);
+                    minReservationTime.setMinutes(now.getMinutes() + 30);
+                    
+                    if (reservationDate < minReservationTime) {
+                        alert('L\'horaire sélectionné est trop proche ou déjà passé. Veuillez choisir un horaire au moins 30 minutes dans le futur.');
+                        return;
+                    }
+                    
+                    // Récupérer les données du formulaire
+                    const name = document.getElementById('bookingName').value;
+                    const email = document.getElementById('bookingEmail').value;
+                    const phone = document.getElementById('bookingPhone').value;
+                    const service = document.getElementById('bookingService').value;
+                    const date = document.getElementById('bookingDate').value;
+                    const time = document.getElementById('bookingTime').value;
+                    
+                    // Formater la date et l'heure pour l'affichage
+                    const formattedDate = new Date(date).toLocaleDateString('fr-FR', {
+                        day: 'numeric',
+                        month: 'long',
+                        year: 'numeric'
+                    });
+                    
+                    // Stocker les données dans localStorage
+                    localStorage.setItem('bookingName', name);
+                    localStorage.setItem('bookingEmail', email);
+                    localStorage.setItem('bookingPhone', phone);
+                    localStorage.setItem('bookingService', service);
+                    localStorage.setItem('bookingDate', date);
+                    localStorage.setItem('bookingTime', time);
+                    
+                    // Afficher message de succès
+                    bookingForm.style.display = 'none';
+                    bookingSuccess.style.display = 'block';
+                    
+                    // Envoyer les données à notre API pour Twilio
+                    sendToTwilio(name, email, phone, service, formattedDate, time);
+                    
+                    // Créer l'URL Calendly avec les informations préremplies
+                    createCalendlyBooking(name, email, phone, service, date, time);
+                });
+                
+                // Nouvelle fonction pour créer une réservation Calendly
+                function createCalendlyBooking(name, email, phone, service, date, time) {
+                    // URL pour récupérer l'URL Calendly personnalisée
+                    const calendlyApiUrl = `http://localhost:3000/api/calendly-booking-url?name=${encodeURIComponent(name)}&email=${encodeURIComponent(email)}&phone=${encodeURIComponent(phone)}&service=${encodeURIComponent(service)}&date=${encodeURIComponent(date)}&time=${encodeURIComponent(time)}`;
+                    
+                    fetch(calendlyApiUrl)
+                        .then(response => response.json())
+                        .then(data => {
+                            if (data.success && data.calendlyUrl) {
+                                // Mettre à jour le message de succès avec un bouton vers Calendly
+                                document.getElementById('bookingSuccess').innerHTML = `
+                                    <div class="alert alert-success">
+                                        <h4>Pré-réservation effectuée!</h4>
+                                        <p>Merci ${name}, vos informations ont été enregistrées.</p>
+                                        <p><strong>Étape suivante :</strong> Cliquez sur le bouton ci-dessous pour finaliser votre rendez-vous sur Calendly.</p>
+                                        <p>Vos informations seront automatiquement préremplies.</p>
+                                        <div class="mt-3">
+                                            <a href="${data.calendlyUrl}" target="_blank" class="btn btn-primary btn-lg">
+                                                <i class="fa fa-calendar"></i> Finaliser sur Calendly
+                                            </a>
+                                        </div>
+                                        <p class="mt-2"><small>Cette page s'ouvrira dans un nouvel onglet</small></p>
+                                    </div>
+                                `;
+                                
+                                // Optionnel: Ouvrir automatiquement Calendly après 3 secondes
+                                setTimeout(() => {
+                                    if (confirm('Voulez-vous ouvrir Calendly maintenant pour finaliser votre réservation ?')) {
+                                        window.open(data.calendlyUrl, '_blank');
+                                    }
+                                }, 3000);
+                            } else {
+                                console.error('Erreur lors de la génération de l\'URL Calendly:', data.message);
+                                // Fallback: Utiliser l'URL Calendly de base
+                                const fallbackUrl = 'https://calendly.com/juste-ok-00/hesso-coiffure';
+                                document.getElementById('bookingSuccess').innerHTML = `
+                                    <div class="alert alert-warning">
+                                        <h4>Réservation en cours...</h4>
+                                        <p>Merci ${name}, vos informations ont été enregistrées.</p>
+                                        <p>Veuillez cliquer sur le lien ci-dessous pour finaliser votre rendez-vous :</p>
+                                        <div class="mt-3">
+                                            <a href="${fallbackUrl}" target="_blank" class="btn btn-primary btn-lg">
+                                                <i class="fa fa-calendar"></i> Réserver sur Calendly
+                                            </a>
+                                        </div>
+                                        <p class="mt-2"><small>Vous devrez saisir à nouveau vos informations sur Calendly</small></p>
+                                    </div>
+                                `;
+                            }
+                        })
+                        .catch(error => {
+                            console.error('Erreur lors de la récupération de l\'URL Calendly:', error);
+                            // Fallback: Utiliser l'URL Calendly de base
+                            const fallbackUrl = 'https://calendly.com/juste-ok-00/hesso-coiffure';
+                            document.getElementById('bookingSuccess').innerHTML = `
+                                <div class="alert alert-info">
+                                    <h4>Réservation en cours...</h4>
+                                    <p>Merci ${name}, vos informations ont été enregistrées.</p>
+                                    <p>Veuillez cliquer sur le lien ci-dessous pour finaliser votre rendez-vous :</p>
+                                    <div class="mt-3">
+                                        <a href="${fallbackUrl}" target="_blank" class="btn btn-primary btn-lg">
+                                            <i class="fa fa-calendar"></i> Réserver sur Calendly
+                                        </a>
+                                    </div>
+                                    <p class="mt-2"><small>Vous devrez saisir à nouveau vos informations sur Calendly</small></p>
+                                </div>
+                            `;
+                        });
+                }
+                
+                // Fonction pour envoyer les données à Twilio via votre backend
+                function sendToTwilio(name, email, phone, service, date, time) {
+                    // URL du serveur - à adapter selon votre déploiement
+                    const apiUrl = 'http://localhost:3000/api/booking';
+                    
+                    // Afficher un message de chargement
+                    document.getElementById('bookingSuccess').innerHTML = `
+                        <div class="alert alert-info">
+                            <h4>Traitement de votre réservation...</h4>
+                            <p>Veuillez patienter quelques instants.</p>
+                        </div>
+                    `;
+                    
+                    // Tentative d'envoi au serveur
+                    fetch(apiUrl, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            name: name,
+                            email: email,
+                            phone: phone,
+                            service: service,
+                            date: date,
+                            time: time
+                        })
+                    })
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error(`Erreur HTTP: ${response.status}`);
+                        }
+                        return response.json();
+                    })
+                    .then(data => {
+                        console.log('Réponse du serveur:', data);
+                        if (data.success) {
+                            // Mettre à jour le message de succès
+                            document.getElementById('bookingSuccess').innerHTML = `
+                                <div class="alert alert-success">
+                                    <h4>Réservation effectuée avec succès!</h4>
+                                    <p>Merci ${name}, votre rendez-vous est confirmé pour le ${date} à ${time}.</p>
+                                    <p>Vous allez recevoir un SMS de confirmation au ${phone}.</p>
+                                </div>
+                            `;
+                        } else {
+                            // Afficher le message d'erreur
+                            document.getElementById('bookingSuccess').innerHTML = `
+                                <div class="alert alert-danger">
+                                    <h4>Erreur lors de la réservation</h4>
+                                    <p>${data.message || 'Veuillez réessayer plus tard.'}</p>
+                                </div>
+                            `;
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Erreur:', error);
+                        
+                        // Mode démo - Simuler une réservation réussie si le serveur n'est pas disponible
+                        document.getElementById('bookingSuccess').innerHTML = `
+                            <div class="alert alert-success">
+                                <h4>Réservation enregistrée en mode démo</h4>
+                                <p>Merci ${name}, votre rendez-vous pour ${service} est programmé le ${date} à ${time}.</p>
+                                <p>Note: Le serveur de SMS n'étant pas accessible, aucun SMS de confirmation n'a été envoyé.</p>
+                                <p><small>Pour activer l'envoi de SMS, assurez-vous que le serveur Node.js est démarré.</small></p>
+                            </div>
+                        `;
+                    });
+                }
+                
+                // Préfixe automatique du préfixe suisse si nécessaire
+                const phoneInput = document.getElementById('bookingPhone');
+                phoneInput.addEventListener('blur', function() {
+                    let value = this.value.trim();
+                    if (value && !value.startsWith('+')) {
+                        if (value.startsWith('0')) {
+                            value = '+41' + value.substring(1);
+                        } else {
+                            value = '+41' + value;
+                        }
+                        this.value = value;
+                    }
+                });
+            });
+        </script>
+    </body>
+</html> 
